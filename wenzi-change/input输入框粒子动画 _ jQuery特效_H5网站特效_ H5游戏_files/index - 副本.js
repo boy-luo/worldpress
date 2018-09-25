@@ -2,9 +2,7 @@ console.clear();
 
 var MAX_LIFE = 50;
 var canvas = document.querySelector('canvas');
-// var input = $("xiaoguo");
-// var input = document.querySelector('input');
-var input = document.querySelector('#xiaoguo');
+var input = document.querySelector('input');
 var field = {}
 var hasFocus = false;
 var caret = document.createElement('span');
@@ -895,45 +893,149 @@ function simulate(dimensions, options) {
 
 				// start ticking
 				tick();
-
-
-
+            //
             // var str='大家来看是否能看见老师你看就开始发的那个接口是南非进口了关键还能';
+            var str='大家来看';
+            var strCont = str.split('');
+            // var arr = str.split('');
+            		// alert(12);
 
+            var i = 0;
+
+            function show(){
+                alert(12);
+                return '';
+                // $("#time").append(arr[i]);
+                // $("#shuru").text($("#shuru").text()  + 'jkj');
+                // $("#shuru").text($("#shuru").text()  + 'jkj');
+//                 var strCont = $("#shuru").text();
+
+				// todo: 获取, 弹出第一个,重置剩余内容
+                // var strCont = $("#shuru").text().split('');
+                // if( ! strCont){
+				// 	clearInterval(t);
+				// 	return ;
+                // }
+                // var strTemp = strCont.shift();
+                // $("#shuru").text(strCont.join(""));
+                //
+                // // todo: 效果
+                // options.action.call(self, 13);
+                //
+                // // typeof strCont.shift();
+                // // alert(strCont);
+                // // if( ! strCont){
+                // // if(strCont == 'undifined'){
+                // // alert(typeof strCont);
+                // // if(typeof strCont == 'undefined'){
+                // // if(typeof strCont.shift() == 'undefined'){
+                // if(typeof strCont[0] == 'undefined'){
+                //     // alert(0);
+                //     clearInterval(t);
+                //     return false;
+                // }
+                // // $("#shuru").text() = input.value + strCont[i];
+                // var input = document.querySelector('input');
+                // // input.value = input.value + shift(strCont[0];
+                // input.value = input.value + strCont.shift();
+                // // alert(strCont);
+                //
+                // // i = i + 1;
+                // // //如果超过数组长度，清除定时器
+                // // if (i > arr.length) {
+                // //     clearInterval(t)
+                // // }
+            }
+
+            // todo: 定时
             // t = window.setInterval("show(" + strCont + ',' +  i + ")",200);
             // var t = window.setInterval("show()",200);
-            // var t = setInterval("show()",200);
-            // todo: success 定时
-            // todo: success 定时
-            // todo: success 定时
-            var t = setInterval(function () {
-                // return '';
-                // alert(12);
-                // alert(input.value);
+//             // var t = setInterval("show()",200);
+//             var t = setInterval(function () {
+//                 // alert(12);
+//                 // return '';
+//                 // $("#time").append(arr[i]);
+//                 // $("#shuru").text($("#shuru").text()  + 'jkj');
+//                 // $("#shuru").text($("#shuru").text()  + 'jkj');
+// //                 var strCont = $("#shuru").text();
+//
+//                 // todo: 获取, 弹出第一个,重置剩余内容
+//                 var strCont = $("#shuru").text().split('');
+//                 // alert(strCont);
+//                 if( ! strCont){
+//                 	clearInterval(t);
+//                 	return ;
+//                 }
+//                 var strTemp = strCont.shift();
+//                 $("#shuru").text(strCont.join(""));
+//                 input.value = input.value + strTemp;
+//
+//                 // todo: 效果
+//                 options.action.call(self, 13);
+//
+//                 // typeof strCont.shift();
+//                 // alert(strCont);
+//                 // if( ! strCont){
+//                 // if(strCont == 'undifined'){
+//                 // alert(typeof strCont);
+//                 // if(typeof strCont == 'undefined'){
+//                 // if(typeof strCont.shift() == 'undefined'){
+//                 // if(typeof strCont[0] == 'undefined'){
+//                 //     // alert(0);
+//                 //     clearInterval(t);
+//                 //     return false;
+//                 // }
+//                 // // $("#shuru").text() = input.value + strCont[i];
+//                 // var input = document.querySelector('input');
+//                 // // input.value = input.value + shift(strCont[0];
+//                 // input.value = input.value + strCont.shift();
+//                 // // alert(strCont);
+//                 //
+//                 // // i = i + 1;
+//                 // // //如果超过数组长度，清除定时器
+//                 // // if (i > arr.length) {
+//                 // //     clearInterval(t)
+//                 // // }
+//
+//             },200);
+            // var t = setInterval(show(),200);
+            // var t = window.setInterval(options.action.call(self, 13),200);
+            // t = window.setInterval("show();  options.action.call(self, 13);",200);
+            //
+            // t = window.setInterval("alert(12)",200);
 
-                // todo: 获取, 弹出第一个,重置剩余内容
-                // var strCont = $("#shuru").text().split('');
-                // var strCont = $("#shuru").text();
-                var strCont = $("#shuru").val();
-                // alert(strCont);
-                // alert( ! strCont);
-
-                if( ! strCont){
-                	clearInterval(t);
-                	return ;
-                } else {
-                    strCont = strCont.split('');
-                    var strTemp = strCont.shift();
-                    // $("#shuru").text(strCont.join(""));
-                    $("#shuru").val(strCont.join(""));
-
-                    input.value = input.value + strTemp;
-
-                    // todo: 效果
-                    options.action.call(self, 13);
-                }
-
-            },200);
+            // var i = 0;
+            // t = window.setInterval("show(" + strCont + ',' +  ++i + ")",200);
+            // // t = window.setInterval("alert(12)",200);
+            //
+            // function show(&arr, &i) {
+            //     alert(12);
+            //     // $("#time").append(arr[i]);
+            //     // input.value = input.value + strCont[i];
+            //     input.value = input.value + arr[i];
+            //     // i = i + 1;
+            //     //如果超过数组长度，清除定时器
+            //     if (i > arr.length) {
+            //         clearInterval(t)
+            //     }
+            // }
+//             setInterval(function(i, strCont){
+//                 // setInterval(function(i){
+//                 // setTimeout(function(str2){
+//                 var input = document.querySelector('input');
+// //                     input.value = input.value + strCont[i];
+// //                 input.value = input.value + strCont[i];
+//                 input.value = input.value + i;
+//                 // input.value = input.value + 'erw';
+//                 // input.value = input.value + str2;
+//                 options.action.call(self, 13);
+//                 // console.log(1);
+//                 i++;
+//                 // if(strCont.length < i){
+//                 // if(i > 10){
+//                 //     break;
+//                 // }
+//             },600);
 
 
 				// start listening to events
@@ -942,6 +1044,118 @@ function simulate(dimensions, options) {
 						options.action.call(self, e);
 				});
 
+            // arr=[1,2,3,4,5,6,7,8,9];
+            // var i=0;
+            // var t=setInterval('show()',2000);
+            // function show() {
+            //     // $("#time").append(arr[i]);
+            //     // input.value = input.value + strCont[i];
+            //     input.value = input.value + arr[i];
+            //     i = i + 1;
+            //     //如果超过数组长度，清除定时器
+            //     if (i > arr.length) {
+            //         clearInterval(t)
+            //     }
+            // }
+
+
+//
+// //                     var input = document.querySelector('input');
+//                     for (var i in strCont){
+//                         setTimeout(function () {
+//
+//                             // input.value = input.value + strCont[i];
+//                             input.value = input.value + 'rt';
+// //                         input.value += strCont[i];
+//                             options.action.call(self, 13);
+//                             // options.action.call(self, e);
+//                         }, 2000);
+//                     }
+
+                    //
+//             var i=0;
+//             // var t=setInterval("show()",600);
+//             var t=setInterval(function () {
+//
+//                 // var str='大家来看是否能看见老师你看就开始发的那个接口是南非进口了关键还能';
+//                 var str='大家来看';
+//                 var strCont = str.split('');
+//                 var input = document.querySelector('input');
+//
+//                 input.value = input.value + record;
+//                 // input.value(input.value + record);
+// //                         input.value += strCont[i];
+//                 options.action.call(self, 13);
+//                 // $("#time").append(arr[i]);
+//                 i=i+1;
+//                 //如果超过数组长度，清除定时器
+//                 if(i>strCont.length){
+//                     // clearInterval(t)
+//                 }
+//             },600);
+//             alert(12);
+
 		}
 
 };
+
+var str='大家来看是否能看见老师你看就开始发的那个接口是南非进口了关键还能';
+// var str='大家来看';
+var strCont = str.split('');
+// var arr = str.split('');
+// alert(12);
+
+var i = 0;
+// t = window.setInterval("show(" + strCont + ',' +  i + ")",200);
+// var t = window.setInterval("show()",200);
+var str='大家来看是否能看见老师你看就开始发的那个接口是南非进口了关键还能';
+// var str='大家来看';
+// var str='大家';
+var strCont = str.split('');
+// var arr = str.split('');
+// alert(12);
+//
+// todo:
+// todo:
+// todo:
+// function show() {
+//     // alert(12);
+//     // $("#time").append(arr[i]);
+//     // $("#shuru").text($("#shuru").text()  + 'jkj');
+//      // alert(strCont);
+//      // if( ! strCont){
+//      // if(strCont == 'undifined'){
+//     // alert(typeof strCont);
+//     // if(typeof strCont == 'undefined'){
+//     // if(typeof strCont.shift() == 'undefined'){
+//     if(typeof strCont[0] == 'undefined'){
+//          // alert(0);
+//           clearInterval(t);
+//           return false;
+// 	 }
+// 	// $("#shuru").text().split('');
+//     // $("#shuru").text() = input.value + strCont[i];
+//     var input = document.querySelector('input');
+//     // input.value = input.value + shift(strCont[0];
+//     input.value = input.value + strCont.shift();
+//     // alert(strCont);
+//
+//     // $("#shuru").text(strCont.join(""));
+//     // i = i + 1;
+//     // //如果超过数组长度，清除定时器
+//     // if (i > arr.length) {
+//     //     clearInterval(t)
+//     // }
+// }
+
+// function show(&arr, &i) {
+//     alert(12);
+//     // $("#time").append(arr[i]);
+//     // input.value = input.value + strCont[i];
+//     input.value = input.value + arr[i];
+//     i = i + 1;
+//     //如果超过数组长度，清除定时器
+//     if (i > arr.length) {
+//         clearInterval(t)
+//     }
+// }

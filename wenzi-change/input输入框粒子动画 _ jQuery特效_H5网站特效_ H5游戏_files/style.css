@@ -83,7 +83,7 @@ body {
   box-shadow: inset 0 0 5em #000;
 }
 
-input {
+#xiaoguo {
   position: absolute;
   box-sizing: border-box;
   bottom: 4em;
@@ -91,3 +91,12 @@ input {
   width: 11em;
   margin-left: -5.5em;
 }
+
+/*input {*/
+  /*position: absolute;*/
+  /*box-sizing: border-box;*/
+  /*bottom: 4em;*/
+  /*left: 50%;*/
+  /*width: 11em;*/
+  /*margin-left: -5.5em;*/
+/*}*/
